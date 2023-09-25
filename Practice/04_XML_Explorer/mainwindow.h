@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QTreeWidgetItem>
-#include <ltinyxml2/tinyxml2.h>
 #include "QTreeWidgetXmlItem.h"
 
 

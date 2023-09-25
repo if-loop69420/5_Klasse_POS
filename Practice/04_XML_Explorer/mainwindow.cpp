@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "ui_MainWindow.h"
+#include "ui_mainwindow.h"
 #include <iostream>
 #include <QFileDialog>
 #include <QMessageBox>
