@@ -1171,6 +1171,10 @@ moc_flightthingy.cpp: ../06_QT-FlightDB/flightthingy.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlglobal.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsql-config.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlexports.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlQuery \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlquery.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlRecord \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlrecord.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
@@ -1513,6 +1517,10 @@ ui_mainwindow.h: ../06_QT-FlightDB/mainwindow.ui \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlglobal.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsql-config.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlexports.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlQuery \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlquery.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlRecord \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlrecord.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
@@ -1691,6 +1699,10 @@ flightthingy.o: ../06_QT-FlightDB/flightthingy.cpp ../06_QT-FlightDB/flightthing
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlglobal.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsql-config.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlexports.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlQuery \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlquery.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlRecord \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlrecord.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
@@ -2075,6 +2087,10 @@ mainwindow.o: ../06_QT-FlightDB/mainwindow.cpp ../06_QT-FlightDB/mainwindow.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlglobal.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsql-config.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qtsqlexports.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlQuery \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlquery.h \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/QSqlRecord \
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql/qsqlrecord.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
