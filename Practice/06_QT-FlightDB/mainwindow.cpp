@@ -19,19 +19,6 @@ MainWindow::MainWindow(QWidget *parent)
     {
         qDebug() << "Database: connection ok";
     }
-    QSqlQuery query(this->db);
-    query.prepare("SELECT * FROM Airline");
-    if(query.exec()){
-        std::cout << "query executed" << std::endl;
-        int idName = query.record().indexOf("name");
-        std::cout << idName << std::endl;
-        while (query.next()) {
-          QString name = query.value(idName).toString();
-          std::cout << name.toStdString() << std::endl;
-        }
-    } else {
-        std::cout << "Query didn't exec" << std::endl;
-    }
 }
 
 MainWindow::~MainWindow()

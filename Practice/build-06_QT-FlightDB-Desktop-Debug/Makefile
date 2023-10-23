@@ -52,11 +52,13 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../06_QT-FlightDB/flightthingy.cpp \
+SOURCES       = ../06_QT-FlightDB/flightplan.cpp \
+		../06_QT-FlightDB/flightthingy.cpp \
 		../06_QT-FlightDB/main.cpp \
 		../06_QT-FlightDB/mainwindow.cpp moc_flightthingy.cpp \
 		moc_mainwindow.cpp
-OBJECTS       = flightthingy.o \
+OBJECTS       = flightplan.o \
+		flightthingy.o \
 		main.o \
 		mainwindow.o \
 		moc_flightthingy.o \
@@ -351,8 +353,10 @@ DIST          = /nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/mkspec
 		/nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/mkspecs/features/exceptions.prf \
 		/nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/mkspecs/features/yacc.prf \
 		/nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/mkspecs/features/lex.prf \
-		../06_QT-FlightDB/06_QT-FlightDB.pro ../06_QT-FlightDB/flightthingy.h \
-		../06_QT-FlightDB/mainwindow.h ../06_QT-FlightDB/flightthingy.cpp \
+		../06_QT-FlightDB/06_QT-FlightDB.pro ../06_QT-FlightDB/flightplan.h \
+		../06_QT-FlightDB/flightthingy.h \
+		../06_QT-FlightDB/mainwindow.h ../06_QT-FlightDB/flightplan.cpp \
+		../06_QT-FlightDB/flightthingy.cpp \
 		../06_QT-FlightDB/main.cpp \
 		../06_QT-FlightDB/mainwindow.cpp
 QMAKE_TARGET  = 06_QT-FlightDB
@@ -972,8 +976,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../06_QT-FlightDB/flightthingy.h ../06_QT-FlightDB/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../06_QT-FlightDB/flightthingy.cpp ../06_QT-FlightDB/main.cpp ../06_QT-FlightDB/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../06_QT-FlightDB/flightplan.h ../06_QT-FlightDB/flightthingy.h ../06_QT-FlightDB/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../06_QT-FlightDB/flightplan.cpp ../06_QT-FlightDB/flightthingy.cpp ../06_QT-FlightDB/main.cpp ../06_QT-FlightDB/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../06_QT-FlightDB/mainwindow.ui $(DISTDIR)/
 
 
@@ -1179,6 +1183,7 @@ moc_flightthingy.cpp: ../06_QT-FlightDB/flightthingy.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h \
+		../06_QT-FlightDB/flightplan.h \
 		moc_predefs.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/libexec/moc
 	/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/libexec/moc $(DEFINES) --include /mnt/sda2/programming_projects/5_Klasse_POS/Practice/build-06_QT-FlightDB-Desktop-Debug/moc_predefs.h -I/nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/mkspecs/linux-g++ -I/mnt/sda2/programming_projects/5_Klasse_POS/Practice/06_QT-FlightDB -I/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include -I/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtWidgets -I/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui -I/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtSql -I/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtCore -I. -I/nix/store/jpivvfsg3cn60mz09v66sidl7myzh0ym-qt-full-6.5.2/include -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/include/c++/12.3.0 -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/include/c++/12.3.0/x86_64-unknown-linux-gnu -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/include/c++/12.3.0/backward -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/lib/gcc/x86_64-unknown-linux-gnu/12.3.0/include -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/include -I/nix/store/n8dryz4xf7ln028j37zapgzg4j47p743-gcc-12.3.0/lib/gcc/x86_64-unknown-linux-gnu/12.3.0/include-fixed -I/nix/store/4lap45ifj50lp980id60fnbvs81yj9lr-glibc-2.37-8-dev/include ../06_QT-FlightDB/flightthingy.h -o moc_flightthingy.cpp
@@ -1524,7 +1529,8 @@ ui_mainwindow.h: ../06_QT-FlightDB/mainwindow.ui \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
-		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h \
+		../06_QT-FlightDB/flightplan.h
 	/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/libexec/uic ../06_QT-FlightDB/mainwindow.ui -o ui_mainwindow.h
 
 compiler_yacc_decl_make_all:
@@ -1536,6 +1542,9 @@ compiler_lex_clean:
 compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
+
+flightplan.o: ../06_QT-FlightDB/flightplan.cpp ../06_QT-FlightDB/flightplan.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o flightplan.o ../06_QT-FlightDB/flightplan.cpp
 
 flightthingy.o: ../06_QT-FlightDB/flightthingy.cpp ../06_QT-FlightDB/flightthingy.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtWidgets/QWidget \
@@ -1706,7 +1715,8 @@ flightthingy.o: ../06_QT-FlightDB/flightthingy.cpp ../06_QT-FlightDB/flightthing
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
-		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h \
+		../06_QT-FlightDB/flightplan.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o flightthingy.o ../06_QT-FlightDB/flightthingy.cpp
 
 main.o: ../06_QT-FlightDB/main.cpp ../06_QT-FlightDB/mainwindow.h \
@@ -2094,7 +2104,8 @@ mainwindow.o: ../06_QT-FlightDB/mainwindow.cpp ../06_QT-FlightDB/mainwindow.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/QPainter \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpainter.h \
 		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qtextoption.h \
-		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h
+		/nix/store/ic16w6gn38rikhvmks926xa1pq09wmj6-qtbase-6.5.2/include/QtGui/qpen.h \
+		../06_QT-FlightDB/flightplan.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../06_QT-FlightDB/mainwindow.cpp
 
 moc_flightthingy.o: moc_flightthingy.cpp 
