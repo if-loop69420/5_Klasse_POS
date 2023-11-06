@@ -15,6 +15,14 @@ int main(int argc, char *argv[])
     qx::QxSqlDatabase::getSingleton()->setUserName("root");
     qx::QxSqlDatabase::getSingleton()->setPassword("");
 
+    QList<driver> driver_list;
+    QSqlError daoError = qx::dao::fetch_all(driver_list);
+
+    for (auto driver : driver_list) {
+        std::cout << driver.d_id << std::endl;
+    }
+
+
     MainWindow w;
     w.show();
     return a.exec();

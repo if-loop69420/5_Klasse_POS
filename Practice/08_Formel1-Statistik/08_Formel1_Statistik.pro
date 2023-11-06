@@ -1,21 +1,24 @@
-include(../../QxOrm_1.4.9/QxOrm/QxOrm.pri)
 QT       += core gui charts
+include(../../QxOrm_1.4.9/QxOrm/QxOrm.pri)
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 CONFIG += c++17
 
 INCLUDEPATH += ../../QxOrm_1.4.9/QxOrm/include/
-LIBS += -L "../../QxOrm_1.4.9/QxOrm"
+LIBS += -L"../../QxOrm_1.4.9/QxOrm/lib" -lQxOrmd
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+DEFINES += _BUILDING_QX_FORMULA_ONE
+PRECOMPILED_HEADER = precompiled.h
 
 SOURCES += \
     driver.cpp \
     main.cpp \
     mainwindow.cpp
+
 
 HEADERS += \
     driver.h \
