@@ -15,16 +15,22 @@ DEFINES += _BUILDING_QX_FORMULA_ONE
 PRECOMPILED_HEADER = precompiled.h
 
 SOURCES += \
+    constructors.cpp \
     driver.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    races.cpp \
+    results.cpp
 
 
 HEADERS += \
+    constructors.h \
     driver.h \
     export.h \
     mainwindow.h \
-    precompiled.h
+    precompiled.h \
+    races.h \
+    results.h
 
 FORMS += \
     mainwindow.ui
